@@ -12,7 +12,8 @@
 <p>以下將要使用 run.html 計算各班學員人數, 以及至多可以有幾人一組 (原則上 7 人一組, 分配 6 台新電腦與一台伺服器).</p>
 <p>動態頁面中的 run 超文件將放入 runsrc 頁面, 處理完 run 與 runsrc 內容後, 先 acp 至遠端, 以便利用遠端 run.html 靜態網頁執行隨後的 Brython 程式.</p>
 <p><a href="https://mde.tw/cad2021_hw/content/run.html?src=https://gist.githubusercontent.com/mdecourse/9297ec10e8a151207e7e76373b78ad64/raw/745d45330fc7ff0d6a2f332800978c2b5c15bdd7/cad2b_count_num_of_stud.py">2b 總修課人數</a>: 66 = 7x9 + 3 表示有三組可以 8 人一組.</p>
-<p><a href="https://mde.tw/cad2021_hw/content/run.html?src=https://gist.githubusercontent.com/mdecourse/9297ec10e8a151207e7e76373b78ad64/raw/a7a527b6d268f0e61f562c51db69ba3f4de6b2da/cad2a_count_num_of_stud.py">2a 總修課人數</a>: 56 = 7x8 表示每組 7 人, 可分為 8 組.</p><h2>run</h2>
+<p><a href="https://mde.tw/cad2021_hw/content/run.html?src=https://gist.githubusercontent.com/mdecourse/9297ec10e8a151207e7e76373b78ad64/raw/a7a527b6d268f0e61f562c51db69ba3f4de6b2da/cad2a_count_num_of_stud.py">2a 總修課人數</a>: 56 = 7x8 表示每組 7 人, 可分為 8 組.</p>
+<h2>run</h2>
 <!-- 導入 brython 程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
@@ -101,7 +102,8 @@ run()
 <script src="https://mde.tw/cp2021/cmsimde/static/gearUtils-09.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
-<script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script><h2>runsrc</h2>
+<script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
+<h2>runsrc</h2>
 <p>以下為包含 Cango Javascript 程式庫連結的 run 動態頁面超文件原始碼:</p>
 <p><a href="/downloads/run.txt">run.txt</a></p>
 <h2>Hybrid</h2>
@@ -167,7 +169,8 @@ Exit</pre>
 <p><a href="https://nginx.org/">Nginx</a>: 提供 <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a> 網際程式 https 並伺服 cad2021_hw 倉儲的靜態網頁.</p>
 <p><a href="https://flask.palletsprojects.com/en/2.0.x/tutorial/deploy/">waitree</a>: 以 production 模式執行 <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a> 網際程式.</p>
 <p></p>
-<p></p><h1>HW1</h1>
+<p></p>
+<h1>HW1</h1>
 <p>參數式 3D 設計與繪圖套件安裝:</p>
 <p style="padding-left: 30px;">各學員每人兩種 MCAD 套件分配表: <a href="https://mde.tw/cad2021/downloads/online/2a_hw1_cad.txt">2a</a>, <a href="https://mde.tw/cad2021/downloads/online/2b_hw1_cad.txt">2b</a></p>
 <p style="padding-left: 30px;"><span style="background-color: #ffff99;">Solidworks 2020</span>:</p>
@@ -196,7 +199,7 @@ Exit</pre>
 <p style="padding-left: 30px;"><span style="background-color: #ccffcc;">Step1</span>: 下載 <a href="https://drive.google.com/file/d/18ukdNlFB9yHY-FZSY-bTnzrPrNv0FE4D/view?usp=sharing">meARM.7z</a> 這個包含尚未完成組立的 meArm Robot 場景與雷射切割零件組立手冊.</p>
 <p style="padding-left: 60px;"><a href="/downloads/meArm_75-0040_v1.pdf">meArm_75-0040_v1.pdf</a> 則是另外一本組立參考手冊.</p>
 <p style="padding-left: 30px;"><span style="background-color: #ccffcc;">Step2</span>: 從課程網頁中的 <a href="https://mde.tw/cad2021/content/Compile%20CoppeliaSim.html">Compile CoppeliaSim 頁面</a>, 下載 <a href="https://drive.google.com/file/d/1hV8hHjjnLvUp-AEjd2iCfBYk067WSjcy/view?usp=sharing">coppeliaSim 4.1.0 官方版與 MSYS2 編譯版.7z</a> (檔案大小 412 MB, 解開壓縮後 1GB) 可攜套件.</p>
-<p style="padding-left: 30px;"><span style="background-color: #ccffcc;">Step3</span>: 在 HW1 中, 要求每一位學員透過程式亂數分配 (兩班實際亂數分配結果以上課時點擊下列按鈕所得結果為準) 所使用的兩套參數式 CAD 套件, 從軟體發展緣起開始進行介紹,  經過教育版軟體套件檔案的取得, 下載安裝以及配置使用. 根據 Step1 中的零件尺寸, 逐一完成 meArm Robot 各零件繪製與組立. 並將零件<a href="https://www.coppeliarobotics.com/helpFiles/en/importExport.htm">匯入</a> CoppeliaSim 進行組裝配置後, 以 <a href="https://www.coppeliarobotics.com/helpFiles/en/customUIPlugin.htm">UI 介面</a>中的 slider 控制 meArm Robot 各軸的旋轉作動.</p>
+<p style="padding-left: 30px;"><span style="background-color: #ccffcc;">Step3</span>: 在 HW1 中, 要求每一位學員透過程式亂數分配 (兩班實際亂數分配結果以上課時點擊下列按鈕所得結果為準) 所使用的兩套參數式 CAD 套件, 從軟體發展緣起開始進行介紹, 經過教育版軟體套件檔案的取得, 下載安裝以及配置使用. 根據 Step1 中的零件尺寸, 逐一完成 meArm Robot 各零件繪製與組立. 並將零件<a href="https://www.coppeliarobotics.com/helpFiles/en/importExport.htm">匯入</a> CoppeliaSim 進行組裝配置後, 以 <a href="https://www.coppeliarobotics.com/helpFiles/en/customUIPlugin.htm">UI 介面</a>中的 slider 控制 meArm Robot 各軸的旋轉作動.</p>
 <p style="padding-left: 30px;">2b CAD 套件分配結果: <a href="https://mde.tw/cad2021/downloads/online/2b_hw1_cad.txt">https://mde.tw/cad2021/downloads/online/2b_hw1_cad.txt</a></p>
 <h4>附件:</h4>
 <p style="padding-left: 30px;">1. CAD 套件分配表:</p>
@@ -269,7 +272,8 @@ function sysCall_init()
 end</pre>
 <p><img alt="" class="add_border" height="282" src="/images/meArm_linkage_dimension.png" width="600"/></p>
 <p>(From: <a href="/downloads/2016_ADDITIVE MANUFACTURING PROCESSES FOR FABRICATING A MINI ROBOT - COMPUTATIONAL MODELS AND EXPERIMENTAL RESULTS.pdf">2016_ADDITIVE MANUFACTURING PROCESSES FOR FABRICATING A MINI ROBOT - COMPUTATIONAL MODELS AND EXPERIMENTAL RESULTS.pdf</a>)</p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/2pFReCfDZsU" title="YouTube video player" width="560"></iframe></p><h2>CAD1 繪圖</h2>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/2pFReCfDZsU" title="YouTube video player" width="560"></iframe></p>
+<h2>CAD1 繪圖</h2>
 <p>CAD1 指各學員所分配到的第一套參數式 CAD 套件, 其中包括 Solidworks, Inventor, NX, Onshape 與 Solvespace.</p>
 <p>CAD1 緣起說明與介紹</p>
 <p>請不要直接從找到的 CAD1 套件說明複製貼上, 而是應該要看完各種參考資料後, 重新打字彙整.</p>
@@ -328,7 +332,7 @@ end</pre>
 <p><a href="https://github.com/mdecourse/cad2021/discussions/6">HW1-1 具體項目成果回報區</a>將於 2021.11.18 開啟, 於 <span style="background-color: #ff99cc;">2021.12.01 22:00 關閉.</span></p>
 <h4>作業 1-1: Mirobot 機械手臂場景組合</h4>
 <p>說明: meArm Robot 有四個自由度, 請根據 HW1 的零組件繪製組立與 CoppeliaSim 運動場景模擬, 延伸至 <a href="https://mde.tw/cad2021/content/Task1-1.html">Task1-1</a> 中六個自由度的 Mirobot 機械手臂.</p>
-<p><a href="https://drive.google.com/file/d/1hnoMQ1Hh_Hgdxh7Aym4q43DzLjOWUanR/view?usp=sharing">mirobot_part1_to_part5.7z</a> 為取自  <a href="https://github.com/wlkata/Mirobot-STL">https://github.com/wlkata/Mirobot-STL</a> 的參考零件. 請利用場景中 Mirobot STL 零件, 組合為可以透過 <a href="https://www.coppeliarobotics.com/helpFiles/en/customUIPlugin.htm">UI 介面</a>中的 slider 控制各軸作動旋轉的運動模型.</p>
+<p><a href="https://drive.google.com/file/d/1hnoMQ1Hh_Hgdxh7Aym4q43DzLjOWUanR/view?usp=sharing">mirobot_part1_to_part5.7z</a> 為取自 <a href="https://github.com/wlkata/Mirobot-STL">https://github.com/wlkata/Mirobot-STL</a> 的參考零件. 請利用場景中 Mirobot STL 零件, 組合為可以透過 <a href="https://www.coppeliarobotics.com/helpFiles/en/customUIPlugin.htm">UI 介面</a>中的 slider 控制各軸作動旋轉的運動模型.</p>
 <p>請根據 <a href="https://mde.tw/cad2021/content/Task1-1.html">Task1-1</a> 中的說明, 完成各項指定任務.</p>
 <h1>HW2</h1>
 <p>HW2 佔學期成績 20%</p>
@@ -352,12 +356,13 @@ end</pre>
 <h1>HW3</h1>
 <p>HW3 為選項作業.</p>
 <p><a href="https://github.com/mdecourse/cad2021/discussions/9">HW3 具體項目成果回報區</a>將於 2021.12.09 開啟, 於 <span style="background-color: #ff99cc;">2022.01.05 22:00 關閉</span></p>
-<p><a href="https://mde.tw/cad2021/content/Task3.html">https://mde.tw/cad2021/content/Task3.html</a> </p>
+<p><a href="https://mde.tw/cad2021/content/Task3.html">https://mde.tw/cad2021/content/Task3.html</a></p>
 <p><a href="https://mde.tw/cad2021/content/Task4.html">https://mde.tw/cad2021/content/Task4.html</a></p>
 <p><a href="https://mde.tw/cad2021/content/Task5.html">https://mde.tw/cad2021/content/Task5.html</a></p>
 <p><a href="https://mde.tw/cad2021/content/Task6.html">https://mde.tw/cad2021/content/Task6.html</a></p>
 <p><a href="https://mde.tw/cad2021/content/Task7.html">https://mde.tw/cad2021/content/Task7.html</a></p>
 <p>請從上列 Tasks 中自行選擇項目內容完成 HW3.</p>
+<h1>HW13</h1>
 <h1>Final Project</h1>
 <p>Final Project 佔學期成績 40%</p>
 <p><span style="background-color: #ffff99;">2a 與 2b 必須在 2022.01.06 上課之前完成 Final Project</span></p>
